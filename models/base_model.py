@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!usr/bin/python3
 """
 base model
 """
@@ -9,12 +9,12 @@ from datetime import datetime
 
 class BaseModel:
     """
-    Base model that defines all common attributes/methods for all the classes
+    Base model that defines all common attributes/methods for other classes
     """
 
     def __init__(self, *args, **kwargs):
         """
-        __init__ methode
+        init methode
         """
         time_format = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid.uuid4())
@@ -32,7 +32,7 @@ class BaseModel:
 
     def __str__(self):
         """
-        print with this format : [<class name>] (<self.id>) <self.__dict__>
+        str methode
         """
         return "[{}] ({}) {}".format(self.__class__.__name__, self.id,
                                      self.__dict__)
