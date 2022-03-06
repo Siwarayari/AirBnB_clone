@@ -5,15 +5,15 @@ Unittest to test FileStorage class
 import unittest
 import pep8
 import json
-import os
 from models.base_model import BaseModel
+import os
 from models.user import User
 from models.state import State
-from models.city import City
 from models.amenity import Amenity
+from models.city import City
 from models.place import Place
-from models.review import Review
 from models.engine.file_storage import FileStorage
+from models.review import Review
 
 
 class TestFileStorage(unittest.TestCase):
